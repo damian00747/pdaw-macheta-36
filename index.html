@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+  <!-- Configurarea paginii și conectarea fișierului CSS -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>SetPoint</title>
 </head>
 <body>
+  <!-- Bara de sus: telefon, e-mail și program -->
   <div class="top-bar">
     <div class="top-bar-contact">
       <span>📞 060 774 215</span>
@@ -15,6 +17,7 @@
     <div class="top-bar-hours">Zilnic, 07:00-22:00</div>
   </div>
 
+  <!-- Navigația principală: căutare, logo și butonul „Rezervă terenul” -->
   <nav class="navbar">
     <div class="nav-search">
       <span>🔍</span>
@@ -29,6 +32,7 @@
     <button class="btn-primary">Rezervă terenul</button>
   </nav>
 
+  <!-- Meniul de navigare către paginile clubului -->
   <div class="sub-nav">
     <ul class="nav-menu">
       <li class="active">Acasă</li>
@@ -38,7 +42,9 @@
       <li>Contact</li>
     </ul>
   </div>
+<!-- Secțiunea principală: prezentarea clubului și rezervarea online -->
 <section class="hero-section">
+  <!-- Titlu, descriere, acțiuni și statistici despre club -->
   <div class="hero-content">
     <span class="badge">Terenuri cu zgură și acoperite</span>
     <h1>Joacă tenis <span>tot anul</span>, pe zgură sau sub cupolă</h1>
@@ -47,11 +53,13 @@
       și antrenori pentru copii și adulți de orice nivel.
     </p>
 
+    <!-- Butoane pentru rezervare și lecția de probă -->
     <div class="hero-actions">
       <button class="btn-primary">Rezervă online</button>
       <button class="btn-secondary">Lecție de probă</button>
     </div>
 
+    <!-- Statistici despre terenuri, antrenori și membri -->
     <div class="hero-stats">
       <div class="stat-box">
         <div class="stat-number">6</div>
@@ -68,9 +76,11 @@
     </div>
   </div>
 
+  <!-- Imaginea terenului și anunțurile informative -->
   <div class="hero-visual">
     <img src="img/mainpagesite.png" alt="Terenul de tenis SetPoint" />
 
+    <!-- Anunț despre iluminatul nocturn -->
     <div class="floating-card top-card">
       <div class="card-icon">💡</div>
       <div>
@@ -79,6 +89,7 @@
       </div>
     </div>
 
+    <!-- Anunț despre turneul de toamnă -->
     <div class="floating-card bottom-card">
       <div class="card-icon">🏆</div>
       <div>
@@ -88,6 +99,7 @@
     </div>
   </div>
 </section>
+<!-- Serviciile și facilitățile clubului -->
 <section class="services-section">
   <div class="services-container">
     <span class="section-tag">Clubul</span>
@@ -96,7 +108,9 @@
 
     <div class="divider-line"></div>
 
+    <!-- Lista facilităților clubului -->
     <div class="services-grid">
+      <!-- Facilitatea: cupolă încălzită -->
       <div class="service-item">
         <div class="service-bg-number">01</div>
         <div class="service-inner">
@@ -108,6 +122,7 @@
         </div>
       </div>
 
+      <!-- Facilitatea: rachete de închiriat -->
       <div class="service-item">
         <div class="service-bg-number">02</div>
         <div class="service-inner">
@@ -119,6 +134,7 @@
         </div>
       </div>
 
+      <!-- Facilitatea: vestiare și dușuri -->
       <div class="service-item">
         <div class="service-bg-number">03</div>
         <div class="service-inner">
@@ -132,13 +148,16 @@
     </div>
   </div>
 </section>
+<!-- Secțiunea cursurilor și a abonamentelor de tenis -->
 <section class="courses-section">
   <div class="courses-container">
     <span class="section-tag">Cursuri</span>
     <h2 class="section-title">Antrenamente pentru toți</h2>
     <p class="section-subtitle">Abonament lunar, în grupe de maximum 4 jucători pe teren.</p>
 
+    <!-- Cardurile cursurilor disponibile -->
     <div class="courses-grid">
+      <!-- Curs: mini-tenis pentru copii -->
       <div class="course-card">
         <div class="course-image-wrapper">
           <img src="img/teniscopii.png" alt="Copii la antrenament de tenis" />
@@ -155,6 +174,7 @@
         </div>
       </div>
 
+      <!-- Curs: tenis pentru juniori -->
       <div class="course-card">
         <div class="course-image-wrapper">
           <img src="img/tenisjuniori.png" alt="Juniori la antrenament de tenis" />
@@ -170,6 +190,7 @@
         </div>
       </div>
 
+      <!-- Curs: tenis pentru adulți începători -->
       <div class="course-card">
         <div class="course-image-wrapper">
           <img src="img/adulti.png" alt="Adulți la antrenament de tenis" />
@@ -187,7 +208,42 @@
           </div>
         </div>
       </div>
+      <!-- Card suplimentar pentru cursul juniorilor -->
+   <div class="course-card">
+        <div class="course-image-wrapper">
+          <img src="img/tenisjuniori.png" alt="Juniori la antrenament de tenis" />
+        </div>
+        <div class="course-info">
+          <div class="rating-stars">★★★★★</div>
+          <h3 class="course-name">Juniori</h3>
+          <p class="course-desc">9-16 ani: tehnică, tactică și pregătire pentru turnee.</p>
+          <div class="course-footer">
+            <span class="course-price">1400 lei</span>
+            <a href="#" class="course-link">Detalii →</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Card suplimentar pentru cursul adulților începători -->
+      <div class="course-card">
+        <div class="course-image-wrapper">
+          <img src="img/adulti.png" alt="Adulți la antrenament de tenis" />
+        </div>
+        <div class="course-info">
+          <div class="rating-stars">★★★★☆</div>
+          <h3 class="course-name">Adulți începători</h3>
+          <p class="course-desc">Serviciul, forehand-ul și reverul, învățate de la zero.</p>
+          <div class="course-footer">
+            <div class="price-container">
+              <span class="old-price">1300 lei</span>
+              <span class="course-price">1100 lei</span>
+            </div>
+            <a href="#" class="course-link">Detalii →</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Curs: lecție individuală -->
       <div class="course-card">
         <div class="course-image-wrapper">
           <img src="img/individual.png" alt="Lecție individuală de tenis" />
@@ -206,6 +262,7 @@
     </div>
   </div>
 </section>
+<!-- Recenziile și testimonialele membrilor -->
 <section class="testimonials-section">
   <div class="testimonials-container">
     <span class="section-tag">Membrii noștri</span>
@@ -213,6 +270,7 @@
 
     <div class="quote-icon">“</div>
 
+    <!-- Navigarea și textul testimonialului afișat -->
     <div class="testimonial-slider-wrapper">
       <button class="slider-arrow arrow-left" aria-label="Previous testimonial">‹</button>
 
@@ -234,6 +292,7 @@
       <button class="slider-arrow arrow-right" aria-label="Next testimonial">›</button>
     </div>
 
+    <!-- Indicatorii poziției în lista de testimoniale -->
     <div class="slider-dots">
       <span class="dot active"></span>
       <span class="dot"></span>
@@ -241,11 +300,13 @@
     </div>
   </div>
 </section>
+<!-- Galeria foto a terenurilor și a clubului -->
 <section class="gallery-section">
   <div class="gallery-container">
     <span class="section-tag">Terenurile</span>
     <h2 class="section-title">Clubul nostru în imagini</h2>
 
+    <!-- Imaginea principală și imaginile secundare din galerie -->
     <div class="gallery-grid">
       <div class="gallery-large-item">
         <img class="gallery-image" src="img/galery.png" alt="Terenul principal al clubului" />
@@ -259,12 +320,14 @@
     </div>
   </div>
 </section>
+<!-- Orarul săptămânal al grupelor de antrenament -->
 <section class="schedule-section">
   <div class="schedule-container">
     <span class="section-tag">Orar</span>
     <h2 class="section-title">Orarul grupelor</h2>
     <p class="section-subtitle">Terenurile libere din orar pot fi rezervate pentru joc liber.</p>
 
+    <!-- Tabelul cu orele și activitățile programate -->
     <div class="schedule-table-wrapper">
       <table class="schedule-table">
         <thead>
@@ -323,6 +386,7 @@
     </div>
   </div>
 </section>
+<!-- Formularul de abonare la noutățile clubului -->
 <section class="newsletter-section">
   <div class="newsletter-container">
     <div class="newsletter-floating-icon">✉</div>
@@ -330,6 +394,7 @@
     <h2 class="newsletter-title">Turnee și terenuri libere</h2>
     <p class="newsletter-subtitle">Îți scriem când se deschid înscrierile la turnee.</p>
 
+    <!-- Câmpul de e-mail și butonul de abonare -->
     <form class="newsletter-form" onsubmit="event.preventDefault();">
       <input type="email" placeholder="Adresa ta de e-mail" required class="newsletter-input" />
       <button type="submit" class="newsletter-btn">Abonează-mă</button>
@@ -337,9 +402,11 @@
   </div>
 </section>
 
+<!-- Subsolul paginii: descriere, linkuri, contact și copyright -->
 <footer class="main-footer">
   <div class="footer-container">
     <div class="footer-grid">
+      <!-- Descrierea clubului și linkurile către rețelele sociale -->
       <div class="footer-col info-col">
         <div class="footer-logo">
           <span class="logo-dot">🟢</span>
@@ -356,6 +423,7 @@
         </div>
       </div>
 
+      <!-- Linkuri informative despre club -->
       <div class="footer-col">
         <h3 class="footer-heading">Club</h3>
         <ul class="footer-links">
@@ -365,6 +433,7 @@
         </ul>
       </div>
 
+      <!-- Linkuri și informații pentru membri -->
       <div class="footer-col">
         <h3 class="footer-heading">Membri</h3>
         <ul class="footer-links">
@@ -374,6 +443,7 @@
         </ul>
       </div>
 
+      <!-- Datele de contact ale clubului -->
       <div class="footer-col">
         <h3 class="footer-heading">Contact</h3>
         <ul class="footer-contacts">
@@ -384,6 +454,7 @@
       </div>
     </div>
 
+    <!-- Drepturi de autor și autorul paginii -->
     <div class="footer-bottom">
       <p class="copyright-text">© 2026 Clubul de tenis Set Point</p>
       <p class="author-text">Făcut cu <span class="heart-icon">❤️</span> de Frecăuțanu Damian</p>

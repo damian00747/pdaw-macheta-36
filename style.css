@@ -1,9 +1,11 @@
+/* Resetarea spațierii și dimensionării elementelor */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Stilurile generale ale paginii */
 body {
     max-width: 960px;
     margin: 0 auto;
@@ -13,11 +15,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Culori de accent */
 .accent-text {
     color: #E0531A;
 }
 
-
+/* Butoanele principale și secundare */
 .btn-primary {
     background-color: #E0531A;
     color: #white;
@@ -36,24 +39,24 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #E0531A;
+    color: #ff0000fa;
     font-weight: 600;
     font-size: 14px;
     padding: 10px 24px;
     border: 1px solid #E0531A;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.2s ease;
 }
 
 .btn-secondary:hover {
-    background-color: #FFF0E6;
+    background-color: #1500ff;
 }
 
 .btn-large {
     padding: 12px 28px;
 }
 
+/* Bara de contact și program */
 .top-bar {
     background-color: #1C160E;
     color: #D1D5DB;
@@ -70,7 +73,7 @@ body {
     gap: 24px;
 }
 
-
+/* Navigația principală, căutarea și logo-ul */
 .navbar {
     background-color: #ffffff;
     padding: 16px 48px;
@@ -120,6 +123,7 @@ body {
     letter-spacing: -0.05em;
 }
 
+/* Meniul de navigare secundar */
 .sub-nav {
     background-color: #ffffff;
     border-bottom: 1px solid #F3F4F6;
@@ -162,6 +166,7 @@ body {
     border-radius: 50%;
 }
 
+/* Secțiunea principală și textul de prezentare */
 .hero-section {
     max-width: 1140px;
     margin: 0 auto;
@@ -172,6 +177,7 @@ body {
     align-items: center;
 }
 
+/* Eticheta de prezentare a terenurilor */
 .badge {
     display: inline-block;
     background-color: #FFF0E6;
@@ -183,6 +189,7 @@ body {
     margin-bottom: 24px;
 }
 
+/* Titlul și descrierea secțiunii principale */
 .hero-title {
     font-size: 48px;
     font-weight: 800;
@@ -198,6 +205,7 @@ body {
     max-width: 440px;
 }
 
+/* Butoanele și statisticile din secțiunea principală */
 .hero-actions {
     display: flex;
     gap: 16px;
@@ -207,7 +215,7 @@ body {
 .hero-stats {
     display: flex;
     gap: 48px;
-    border-top: 1px solid #F3F4F6;
+    border-top: 1px solid #ffffff;
     padding-top: 24px;
 }
 
@@ -222,6 +230,7 @@ body {
     margin-top: 4px;
 }
 
+/* Imaginea principală și cardurile informative */
 .hero-visual {
     position: relative;
     display: flex;
@@ -275,6 +284,7 @@ body {
     width: 210px;
 }
 
+/* Butonul flotant de chat */
 .chat-btn {
     position: fixed;
     bottom: 96px;
@@ -295,6 +305,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Secțiunea cu serviciile clubului */
 .services-section {
     background-color: #ffffff;
     border-top: 1px solid #F3F4F6;
@@ -307,6 +318,7 @@ body {
     text-align: center;
 }
 
+/* Titlurile și separatorul secțiunilor */
 .section-tag {
     font-size: 10px;
     font-weight: 700;
@@ -336,6 +348,7 @@ body {
     margin: 0 auto 64px auto;
 }
 
+/* Grila și cardurile serviciilor */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -382,17 +395,19 @@ body {
     line-height: 1.6;
 }
 
+/* Adaptarea navigației, secțiunii principale și serviciilor pe mobil */
 @media (max-width: 768px) {
     .top-bar { padding: 8px 16px; flex-direction: column; gap: 4px; text-align: center; }
     .navbar { padding: 16px; flex-direction: column; gap: 16px; }
     .nav-search { width: 100%; }
     .hero-section { grid-template-columns: 1fr; gap: 64px; padding: 48px 16px; }
     .hero-title { font-size: 32px; }
-    .services-grid { grid-template-columns: 1fr; gap: 48px; }
+    .services-grid { grid-template-columns: 2fr; gap: 48px; }
 }
 
+/* Secțiunea cursurilor și grila de carduri */
 .courses-section {
-    background-color: #FAF9F6; /* Fundalul ușor cald din machetă */
+    background-color: #FAF9F6; 
     padding: 80px 24px;
 }
 
@@ -404,12 +419,13 @@ body {
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 48px;
     text-align: left;
 }
 
+/* Imaginea, eticheta și informațiile fiecărui curs */
 .course-card {
     background-color: #ffffff;
     border-radius: 16px;
@@ -456,6 +472,7 @@ body {
     justify-content: space-between;
 }
 
+/* Evaluarea, denumirea, descrierea și prețul cursului */
 .rating-stars {
     color: #ECC94B;
     font-size: 12px;
@@ -472,7 +489,7 @@ body {
 .course-desc {
     font-size: 13px;
     color: #718096;
-    line-height: 1.5;
+    line-height: 2;
     margin-bottom: 16px;
 }
 
@@ -513,6 +530,7 @@ body {
     color: #c64412;
 }
 
+/* Secțiunea testimonialelor și a recenziilor */
 .testimonials-section {
     background-color: #ffffff;
     padding: 80px 24px;
@@ -533,6 +551,7 @@ body {
     margin-bottom: -12px;
 }
 
+/* Săgețile și conținutul sliderului de testimoniale */
 .testimonial-slider-wrapper {
     display: flex;
     align-items: center;
@@ -575,6 +594,7 @@ body {
     margin-bottom: 32px;
 }
 
+/* Autorul testimonialului și indicatorii sliderului */
 .testimonial-author {
     display: flex;
     align-items: center;
@@ -630,6 +650,7 @@ body {
 }
 
 
+/* Adaptarea cursurilor și testimonialelor pentru ecrane mai mici */
 @media (max-width: 960px) {
     .courses-grid {
         grid-template-columns: 1fr;
@@ -661,6 +682,7 @@ body {
     }
 }
 
+/* Secțiunea galeriei foto */
 .gallery-section {
     background-color: #FAF9F6; 
     padding: 60px 24px;
@@ -672,6 +694,7 @@ body {
     text-align: center;
 }
 
+/* Grila și imaginile galeriei */
 .gallery-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -686,7 +709,7 @@ body {
 
 .gallery-sub-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 220px);
     gap: 20px;
 }
@@ -773,6 +796,7 @@ body {
 }
 
 
+/* Adaptarea galeriei pentru tablete și telefoane */
 @media (max-width: 850px) {
     .gallery-grid {
         grid-template-columns: 1fr; 
@@ -786,6 +810,7 @@ body {
 }
 
 
+/* Secțiunea de abonare la noutăți */
 .newsletter-section {
     background-color: #FFF0E6; 
     padding: 80px 24px;
@@ -834,6 +859,7 @@ body {
     margin-bottom: 32px;
 }
 
+/* Formularul de abonare și butonul său */
 .newsletter-form {
     display: flex;
     gap: 12px;
@@ -874,6 +900,7 @@ body {
 }
 
 
+/* Subsolul paginii și coloanele sale */
 .main-footer {
     background-color: #110D08; 
     color: #A0AEC0;
@@ -893,6 +920,7 @@ body {
     border-bottom: 1px solid #2D2418;
 }
 
+/* Logo-ul, descrierea și linkurile sociale din subsol */
 .footer-logo {
     display: flex;
     align-items: center;
@@ -931,6 +959,7 @@ body {
     background-color: #E0531A;
     color: white;
 }
+/* Titlurile și linkurile din coloanele subsolului */
 .footer-heading {
     color: #ffffff;
     font-size: 15px;
@@ -952,6 +981,7 @@ body {
 .footer-links a:hover {
     color: #ffffff;
 }
+/* Datele de contact și zona de copyright */
 .footer-contacts {
     list-style: none;
     font-size: 13px;
@@ -971,6 +1001,7 @@ body {
 .heart-icon {
     color: #E0531A;
 }
+/* Adaptarea formularului și a subsolului pentru mobil */
 @media (max-width: 768px) {
     .newsletter-container {
         padding: 32px 20px;
